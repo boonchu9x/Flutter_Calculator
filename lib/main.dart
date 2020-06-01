@@ -20,6 +20,15 @@ class HomeScreen extends StatelessWidget {
         title: Text('Calculator'),
         backgroundColor: Colors.orange[400],
       ),
+      body: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
