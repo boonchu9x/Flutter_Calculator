@@ -58,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
         txtPress == '/') {
       num_1 = double.parse(output);
       operand = txtPress;
-      _output = '0';
     } else if (txtPress == '=') {
       num_2 = double.parse(output);
       if (operand == '+') {
@@ -78,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
       num_2 = 0.0;
       operand = '';
     } else {
-      _output = txtPress;
+      _output = _output + txtPress;
     }
     setState(() {
       output = double.parse(_output).toStringAsFixed(2);
